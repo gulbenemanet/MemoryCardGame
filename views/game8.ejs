@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octal Memory Card Game</title>
+    <link rel="stylesheet" href="../public/game.css">
+</head>
+
+<body>
+
+    <div class="scmv" id="scmvv">
+        <p id='bb'>Score: 0</p>
+        <p id="cc">Move: 0</p>
+    </div>
+
+    <button id="refresh" onclick="window.location.reload()">Retry</button>
+
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1 id='dd'>Your Point: </h1>
+            <label for="isim" id="aa"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="isim" required>
+            <br>
+            <label for="psw" id="aa"><b>Note</b></label>
+            <input type="text" placeholder="Add a note to your success" name="psw">
+            <br>
+
+            <button type="submit" class="btn" onclick="window.location.href = '/'">Save</button>
+            <button type="retry" class="btn retry" onclick="window.location.href = '/'">Play Again</button> <br>
+        </form>
+    </div>
+    <section class="gamee" id="gamee">
+        <div class="kartlar" id="kartlarr">
+            <img class="frontcards" id="mickeys" src="../public/mickey.png">
+            <img class="backcards" id="backk" src="../public/background.png">
+        </div>
+        <div class="kartlar" id="kartlarr1">
+            <img class="frontcards" id="mickeys" src="../public/mickey.png">
+            <img class="backcards" id="backk1" src="../public/background.png">
+        </div>
+        <div class="kartlar" id="kartlarr2">
+            <img class="frontcards" src="../public/pikachu.png">
+            <img class="backcards" id="backk2" src="../public/background.png">
+        </div>
+        <div class="kartlar" id="kartlarr3">
+            <img class="frontcards" src="../public/pikachu.png">
+            <img class="backcards" id="backk3" src="../public/background.png">
+        </div>
+
+        <div class="kartlar" id="kartlarr4">
+            <img class="frontcards" src="../public/sünger.png">
+            <img class="backcards" id="backk4" src="../public/background.png">
+        </div>
+        <div class="kartlar" id="kartlarr5">
+            <img class="frontcards" src="../public/sünger.png">
+            <img class="backcards" id="backk5" src="../public/background.png">
+        </div>
+        <div class="kartlar" id="kartlarr6">
+            <img class="frontcards" src="../public/tweety.png">
+            <img class="backcards" id="backk6" src="../public/background.png">
+        </div>
+        <div class="kartlar" id="kartlarr7">
+            <img class="frontcards" src="../public/tweety.png">
+            <img class="backcards" id="backk7" src="../public/background.png">
+        </div>
+        <!-- <div class="kartlar">
+            <div class="front">
+                <img class="frontcards" src="./cartoon/sünger.png">
+                <img class="frontcards" src="./cartoon/sünger.png">
+                <img class="frontcards" src="./cartoon/tweety.png">
+                <img class="frontcards" src="./cartoon/tweety.png">
+                <img class="frontcards" src="./cartoon/pikachu.png">
+                <img class="frontcards" src="./cartoon/pikachu.png">
+                <img class="frontcards" src="./cartoon/mickey.png">
+                <img class="frontcards" src="./cartoon/mickey.png">
+            </div>
+
+            <div class="back">
+                <img class="backcards" id="backk" src="./cartoon/background.png">
+                <img class="backcards" id="backk1" src="./cartoon/background.png">
+                <img class="backcards" id="backk2" src="./cartoon/background.png">
+                <img class="backcards" id="backk3" src="./cartoon/background.png">
+                <img class="backcards" id="backk4" src="./cartoon/background.png">
+                <img class="backcards" id="backk5" src="./cartoon/background.png">
+                <img class="backcards" id="backk6" src="./cartoon/background.png">
+                <img class="backcards" id="backk7" src="./cartoon/background.png">
+            </div>
+        </div> -->
+
+    </section>
+
+
+
+    <script type="text/javascript" src="../public/game8.js" charset="utf-8"></script>
+</body>
+
+</html>
