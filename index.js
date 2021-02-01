@@ -14,6 +14,6 @@ app.use('/public', express.static(path.join(__dirname, 'public')))
 
 app.use('/', router);
 
-app.listen(process.env.PORT || 3000)
-
-
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Sunucu Çalıştı..");
+})
