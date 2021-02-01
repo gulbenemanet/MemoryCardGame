@@ -17,4 +17,3 @@ app.use('/', router);
 app.listen(process.env.PORT || 3000)
 
 
-//some css problems like animasyonlar responsive olmaması tekrar oynama ile ana sayfaya yönlendir ekrana çıkacak bi uyarı olabilir
