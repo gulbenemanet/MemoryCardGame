@@ -1,1 +1,0 @@
-ana sayfaya yönlendir ekrana çıkacak bi uyarı olabilir
