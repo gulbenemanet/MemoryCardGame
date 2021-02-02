@@ -1,1 +1,1 @@
-rana çıkacak bi uyarı olabilir
+ana sayfaya yönlendir ekrana çıkacak bi uyarı olabilir

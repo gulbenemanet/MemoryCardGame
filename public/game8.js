@@ -25,9 +25,7 @@ let kartlar = [kart, kart1, kart2, kart3, kart4, kart5, kart6, kart7];
 let counter = 0;
 let moveCount = 0;
 let scoreCount = 0;
-let matchControl = false;
 let ilk, ikinci;
-let ciftMi = false;
 
 const move = document.getElementById('cc')
 let score = document.getElementById('bb')
