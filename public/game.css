@@ -1,15 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #CEBAE8;
-    height: 100vh;
-    display: flex;
-}
-
 #btn {
     background-color: #9F9FDF;
     color: #E2EBC2;
