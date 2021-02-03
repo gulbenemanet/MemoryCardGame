@@ -33,8 +33,8 @@ body {
     margin: 0;
     position: absolute;
     display: inline-block;
-    top: 35%;
-    left: 35%;
+    top: 25%;
+    left: 25%;
     cursor: pointer;
     border: 5px solid #E2EBC2;
     border-radius: 12px;

@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-    res.render('game16.ejs')
+    res.render('game16')
 }

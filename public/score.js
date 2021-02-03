@@ -1,0 +1,1 @@
+const scoreTable = document.getElementById('scoretable')

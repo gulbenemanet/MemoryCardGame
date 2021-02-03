@@ -3,6 +3,8 @@ const anasayfa = require('../controller/anasayfa');
 const sekiz = require('../controller/sekiz')
 const onaltı = require('../controller/onaltı')
 
+const Gamer = require('../models/gamerModels')
+
 const router = express.Router();
 
 router.get('/', anasayfa)
