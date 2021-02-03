@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/score', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost/score', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("db bağlannıldı...");
     })
