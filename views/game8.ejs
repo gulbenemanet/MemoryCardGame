@@ -19,16 +19,16 @@
 
 
     <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
+        <form name="formmm" action="/add" method="POST" class="form-container">
             <h1 id='dd'>Your Point: </h1>
             <label for="isim" id="aa"><b>Name</b></label>
-            <input type="text" placeholder="Enter Name" name="isim" required>
+            <input type="text" id="isimab" placeholder="Enter Name" name="isim" required>
             <br>
             <label for="psw" id="aa"><b>Note</b></label>
-            <input type="text" placeholder="Add a note to your success" name="psw">
+            <input type="text" id="noteab" placeholder="Add a note to your success" name="psw">
             <br>
 
-            <button type="submit" class="btn" id="savebtn">Save</button>
+            <button type="submit" class="btn" id="savebtn" onclick="window.location.href = '/'">Save</button>
             <button type="retry" class="btn retry" onclick="window.location.href = '/'">Play Again</button> <br>
         </form>
     </div>
@@ -95,7 +95,6 @@
 
 
     <script type="text/javascript" src="../public/game8.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../public/score.js" charset="utf-8"></script>
 </body>
 
 </html>

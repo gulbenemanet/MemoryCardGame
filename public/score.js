@@ -1,6 +1,9 @@
-const savebtn = document.getElementById('savebtn')
-const Gamer = require('../models/gamerModels')
+let isim = document.getElementById('isimab').value
 
-savebtn.addEventListener('click', () => {
+let deneme = document.getElementById('savebtn')
 
+
+deneme.addEventListener('click', () => {
+    console.log(isim);
+    console.log("jkdncskj");
 })
