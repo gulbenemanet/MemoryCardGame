@@ -147,7 +147,7 @@ var bg = document.querySelector('html');
 
 let speak = document.getElementById('speak')
 speak.addEventListener('click', () => {
-    console.log("oki");
+    //console.log("oki");
     recognition.start();
     console.log('Ready to receive a command.');
 })
@@ -162,7 +162,7 @@ let of4 = y[4].children;
 let of5 = y[5].children;
 let of6 = y[6].children;
 let of7 = y[7].children;
-console.log(of[1].id);
+//console.log(of[1].id);
 const kart00 = window.document.getElementById(of[1].id);
 const kart01 = window.document.getElementById(of1[1].id);
 const kart02 = window.document.getElementById(of2[1].id);

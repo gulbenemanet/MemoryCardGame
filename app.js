@@ -20,3 +20,6 @@ app.use('/', router);
 app.listen(process.env.PORT || 3000, () => {
     console.log("Sunucu Çalıştı..");
 })
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
