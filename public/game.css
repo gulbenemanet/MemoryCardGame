@@ -84,7 +84,7 @@ body {
     perspective: 1000px;
 }
 
-.disabled {
+.gamee.disabled {
     pointer-events: none;
 }
 
@@ -101,7 +101,21 @@ body {
     height: 100px;
     outline: none;
     float: right;
-    margin-left: 5px;
+    /* margin-left: 5px; */
+}
+
+#speak {
+    margin-top: 10px;
+    background-color: #9F9FDF;
+    border-style: solid;
+    border-color: #E2EBC2;
+    text-align: center;
+    border-radius: 50%;
+    color: #E2EBC2;
+    font-family: fantasy;
+    width: 120px;
+    height: 100px;
+    text-align: center;
 }
 
 .scmv {
@@ -114,7 +128,7 @@ body {
     text-align: center;
     border-radius: 50%;
     display: inline-block;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     margin-top: 10px;
 }
 
@@ -234,6 +248,10 @@ body {
 }
 
 #refresh.abcd {
+    visibility: hidden;
+}
+
+#speak.abcd {
     visibility: hidden;
 }
 

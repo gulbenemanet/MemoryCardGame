@@ -9,14 +9,12 @@
 </head>
 
 <body>
-
+    <p id="speak" class="output">Speak</p>
+    <button id="refresh" onclick="window.location.reload()">Retry</button>
     <div class="scmv" id="scmvv">
         <p id='bb'>Score: 0</p>
         <p id="cc">Move: 0</p>
     </div>
-
-    <button id="refresh" onclick="window.location.reload()">Retry</button>
-
 
     <div class="form-popup" id="myForm">
         <form name="formmm" action="/add" method="POST" class="form-container">
@@ -28,8 +26,8 @@
             <input type="text" id="noteab" placeholder="Add a note to your success" name="psw">
             <br>
 
-            <button type="submit" class="btn" id="savebtn" onclick="window.location.href = '/'">Save</button>
-            <button type="retry" class="btn retry" onclick="window.location.href = '/'">Play Again</button> <br>
+            <button type="submit" class="btn" id="savebtn" onclick="window.location.href='/'">Save</button>
+            <button type="retry" class="btn retry" onclick="window.location.href='/'">Play Again</button> <br>
         </form>
     </div>
     <section class="gamee" id="gamee">
@@ -66,27 +64,27 @@
             <img class="frontcards" src="../public/images/tweety.png">
             <img class="backcards" id="backk7" src="../public/images/background.png">
         </div>
-        <!-- <div class="kartlar">
-            <div class="front">
-                <img class="frontcards" src="./cartoon/sünger.png">
-                <img class="frontcards" src="./cartoon/sünger.png">
-                <img class="frontcards" src="./cartoon/tweety.png">
-                <img class="frontcards" src="./cartoon/tweety.png">
-                <img class="frontcards" src="./cartoon/pikachu.png">
-                <img class="frontcards" src="./cartoon/pikachu.png">
-                <img class="frontcards" src="./cartoon/mickey.png">
-                <img class="frontcards" src="./cartoon/mickey.png">
+        <!-- <div class="kartlar ">
+            <div class="front ">
+                <img class="frontcards " src="./cartoon/sünger.png ">
+                <img class="frontcards " src="./cartoon/sünger.png ">
+                <img class="frontcards " src="./cartoon/tweety.png ">
+                <img class="frontcards " src="./cartoon/tweety.png ">
+                <img class="frontcards " src="./cartoon/pikachu.png ">
+                <img class="frontcards " src="./cartoon/pikachu.png ">
+                <img class="frontcards " src="./cartoon/mickey.png ">
+                <img class="frontcards " src="./cartoon/mickey.png ">
             </div>
 
-            <div class="back">
-                <img class="backcards" id="backk" src="./cartoon/background.png">
-                <img class="backcards" id="backk1" src="./cartoon/background.png">
-                <img class="backcards" id="backk2" src="./cartoon/background.png">
-                <img class="backcards" id="backk3" src="./cartoon/background.png">
-                <img class="backcards" id="backk4" src="./cartoon/background.png">
-                <img class="backcards" id="backk5" src="./cartoon/background.png">
-                <img class="backcards" id="backk6" src="./cartoon/background.png">
-                <img class="backcards" id="backk7" src="./cartoon/background.png">
+            <div class="back ">
+                <img class="backcards " id="backk " src="./cartoon/background.png ">
+                <img class="backcards " id="backk1 " src="./cartoon/background.png ">
+                <img class="backcards " id="backk2 " src="./cartoon/background.png ">
+                <img class="backcards " id="backk3 " src="./cartoon/background.png ">
+                <img class="backcards " id="backk4 " src="./cartoon/background.png ">
+                <img class="backcards " id="backk5 " src="./cartoon/background.png ">
+                <img class="backcards " id="backk6 " src="./cartoon/background.png ">
+                <img class="backcards " id="backk7 " src="./cartoon/background.png ">
             </div>
         </div> -->
 
@@ -94,7 +92,8 @@
 
 
 
-    <script type="text/javascript" src="../public/game8.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../public/game8.js" charset="utf-8 "></script>
+    <script type="text/javascript" src="../public/score.js" charset="utf-8 "></script>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
-let isim = document.getElementById('isimab').value
+// let isim = document.getElementById('isimab').value
 
-let deneme = document.getElementById('savebtn')
+// let deneme = document.getElementById('savebtn')
 
 
-deneme.addEventListener('click', () => {
-    console.log(isim);
-    console.log("jkdncskj");
-})
+// deneme.addEventListener('click', () => {
+//     console.log(isim);
+//     console.log("jkdncskj");
+// })
