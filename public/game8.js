@@ -128,8 +128,8 @@ var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
 
-var numbers = ['first', 'second', 'third', 'forth', 'fifth', 'sixth', 'brown', 'seventh', 'eighth']
-var grammar = '#JSGF V1.0; grammar numbers; public <statement> = ' + numbers.join(' | ') + ' ;'
+var numbers = ['first one', 'second one', 'third one', 'forth one', 'fifth one', 'sixth one', 'brown one', 'seventh one', 'eighth one']
+var grammar = '#JSGF V1.0; grammar numbers; public <number> = ' + numbers.join(' | ') + ' ;'
 
 var recognition = new SpeechRecognition();
 var speechRecognitionList = new SpeechGrammarList();
@@ -147,7 +147,6 @@ var bg = document.querySelector('html');
 
 let speak = document.getElementById('speak')
 speak.addEventListener('click', () => {
-    //console.log("oki");
     recognition.start();
     console.log('Ready to receive a command.');
 })
@@ -176,7 +175,7 @@ recognition.onresult = function(event) {
     var numbers = event.results[0][0].transcript;
     diagnostic.textContent = 'Result received: ' + numbers + '.';
     console.log('Confidence: ' + event.results[0][0]);
-    if (numbers == 'first') {
+    if ((numbers == 'first one')) {
         kart00.classList.add('flip')
         counter++
         moveCount++
@@ -188,7 +187,7 @@ recognition.onresult = function(event) {
             ikinci = kart00;
             open();
         }
-    } else if ((numbers == 'second')) {
+    } else if ((numbers == 'second one')) {
         kart01.classList.add('flip')
         counter++
         moveCount++
@@ -200,7 +199,7 @@ recognition.onresult = function(event) {
             ikinci = kart01;
             open();
         }
-    } else if (numbers == 'third') {
+    } else if (numbers == 'third one') {
         kart02.classList.add('flip')
         counter++
         moveCount++
@@ -212,7 +211,7 @@ recognition.onresult = function(event) {
             ikinci = kart02;
             open();
         }
-    } else if (numbers == 'forth') {
+    } else if (numbers == 'forth one') {
         kart03.classList.add('flip')
         counter++
         moveCount++
@@ -224,7 +223,7 @@ recognition.onresult = function(event) {
             ikinci = kart03;
             open();
         }
-    } else if (numbers == 'fifth') {
+    } else if (numbers == 'fifth one') {
         kart04.classList.add('flip')
         counter++
         moveCount++
@@ -236,7 +235,7 @@ recognition.onresult = function(event) {
             ikinci = kart04;
             open();
         }
-    } else if (numbers == 'sixth') {
+    } else if (numbers == 'sixth one') {
         kart05.classList.add('flip')
         counter++
         moveCount++
@@ -248,7 +247,7 @@ recognition.onresult = function(event) {
             ikinci = kart05;
             open();
         }
-    } else if (numbers == 'seventh') {
+    } else if (numbers == 'seventh one') {
         kart06.classList.add('flip')
         counter++
         moveCount++
@@ -260,7 +259,7 @@ recognition.onresult = function(event) {
             ikinci = kart06;
             open();
         }
-    } else if (numbers == 'eight') {
+    } else if (numbers == 'eight one') {
         kart07.classList.add('flip')
         counter++
         moveCount++
