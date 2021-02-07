@@ -1,5 +1,5 @@
 const Modal = require('../models/gamerModels');
-const { model } = require('mongoose');
+
 const ekleme = (req, res) => {
     const eklenecek = new Modal(req.body)
     const sonuc = eklenecek.save();
