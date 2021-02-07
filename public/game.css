@@ -48,6 +48,16 @@ body {
     transition: 0.5s;
 }
 
+.scoreTable {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    cursor: pointer;
+    border: 5px solid #E2EBC2;
+    border-radius: 12px;
+    text-align: center;
+}
+
 .giris span:after {
     content: '\00bb';
     position: absolute;
