@@ -144,11 +144,12 @@ recognition.maxAlternatives = 1;
 
 var diagnostic = document.querySelector('.output');
 var bg = document.querySelector('html');
-
 let speak = document.getElementById('speak')
+
 speak.addEventListener('click', () => {
     recognition.start();
-    console.log('Ready to receive a command.');
+    speak.innerHTML = "Ready";
+    //console.log('Ready to receive a command.');
 })
 
 let f = document.body.children;
