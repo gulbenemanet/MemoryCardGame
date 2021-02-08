@@ -1,20 +1,19 @@
-const Modal = require('../models/gamerModels');
+const Model = require('../models/gamerModels');
 
 const ekleme = (req, res) => {
-    const eklenecek = new Modal({ isim: req.body.isim, note: req.body.note })
+    const eklenecek = new Model({ isim: req.body.isim, note: req.body.note, puan: req.body.puan })
     const sonuc = eklenecek.save();
     res.render('game')
     console.log("ekleme yapıldı");
-    console.log(req.body);
+    //console.log(req);
 }
 
 const view = (req, res) => {
-    Modal.find()
+    Model.find()
         .then((son) => {
-            //res.json(son)
-            //res.render('game', son)
+            // res.json(son[0].isim)
             res.render('game', {
-                son: son
+                son: son[0].isim
             })
         })
         .catch(err => console.log(err))

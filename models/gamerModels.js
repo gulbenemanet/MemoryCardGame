@@ -12,6 +12,10 @@ const GamerSchema = new Schema({
     },
     note: {
         type: String,
+    },
+    puan: {
+        type: Number,
+        trim: true
     }
 }, { collection: 'scoreTable' })
 
