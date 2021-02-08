@@ -9,11 +9,13 @@ const ekleme = (req, res) => {
 }
 
 const view = (req, res) => {
-    Model.find()
+    Model.find({})
         .then((son) => {
             // res.json(son[0].isim)
             res.render('game', {
-                son: son[0].isim
+                // son: son[0].isim
+                title: 'Deneme',
+                records: son
             })
         })
         .catch(err => console.log(err))
