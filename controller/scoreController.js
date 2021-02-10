@@ -12,11 +12,7 @@ const view = (req, res) => {
     Model.find({})
         .then((son) => {
             // res.json(son[0].isim)
-            res.render('game', {
-                // son: son[0].isim
-                title: 'Deneme',
-                records: son
-            })
+            res.json(son)
         })
         .catch(err => console.log(err))
 }

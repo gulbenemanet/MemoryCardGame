@@ -23,6 +23,7 @@ body {
     font-size: 16px;
     outline: none;
     cursor: pointer;
+    font-family: fantasy;
 }
 
 #btn:hover {
@@ -39,6 +40,10 @@ body {
     border: 5px solid #E2EBC2;
     border-radius: 12px;
     text-align: center;
+    height: 100px;
+    width: 400px;
+    font-family: fantasy;
+    color: #E2EBC2;
 }
 
 .giris span {
@@ -51,11 +56,40 @@ body {
 .scoreTable {
     position: absolute;
     top: 55%;
-    left: 25%;
+    left: 28%;
     cursor: pointer;
     border: 5px solid #E2EBC2;
     border-radius: 12px;
     text-align: center;
+    width: auto;
+    height: auto;
+    font-family: fantasy;
+}
+
+.scoreTable td,
+.scoreTable th {
+    padding: 15px;
+}
+
+.scoreTable tr:hover {
+    background-color: #E2EBC2;
+}
+
+.scoreTable td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9F9FDF;
+    color: #E2EBC2;
+    border: #E2EBC2;
+}
+
+.scoreTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #A3BBE0;
+    color: #E2EBC2;
 }
 
 .giris span:after {
