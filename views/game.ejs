@@ -22,9 +22,9 @@
         <table class="w3-table" id="tablee">
             <thead style="background-color: cornflowerblue;">
                 <tr>
+                    <th>WHY</th>
                     <th>Name </th>
                     <th>Note </th>
-                    <th>Points </th>
                 </tr>
             </thead>
             <tbody id="deneme">
@@ -35,7 +35,6 @@
     </div>
     <script>
         const veriYazdirma = (son) => {
-            console.log(son);
             table = document.getElementById('tablee');
             for (let i = 0; i < son.length; i++) {
                 let tr = document.createElement('tr');
@@ -49,29 +48,22 @@
                 tr.appendChild(td)
                 let td1 = document.createElement('td');
                 tr.appendChild(td1)
-                let td2 = document.createElement('td');
-                tr.appendChild(td2)
+
 
                 td.innerHTML = son[i].isim;
                 td1.innerHTML = son[i].note;
             }
         }
-        const veriAlma = (e) => {
-            e.preventDefault();
-            fetch('/view')
-                .then(res => res.json())
-                .then(sonu => {
-                    veriYazdirma(sonu)
-                })
-        }
-        const ilk = () => {
+
+        const deneme = () => {
             fetch('/view')
                 .then(response => response.json())
-                .then((sonuc) => {
-                    veriYazdirma(sonuc)
+                .then((son) => {
+                    console.log(son);
+                    veriYazdirma(son);
                 })
         }
-        ilk();
+        deneme()
     </script>
 </body>
 

@@ -1,7 +1,8 @@
 const Model = require('../models/gamerModels');
 
 const ekleme = (req, res) => {
-    const eklenecek = new Model({ isim: req.body.isim, note: req.body.note, puan: req.body.puan })
+    const eklenecek = new Model({ isim: req.body.isim, note: req.body.note })
+    console.log(req.body);
     const sonuc = eklenecek.save();
     res.render('game')
     console.log("ekleme yapıldı");
@@ -11,7 +12,6 @@ const ekleme = (req, res) => {
 const view = (req, res) => {
     Model.find({})
         .then((son) => {
-            // res.json(son[0].isim)
             res.json(son)
         })
         .catch(err => console.log(err))
